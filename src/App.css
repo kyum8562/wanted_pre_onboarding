@@ -2,7 +2,16 @@
   text-align: center;
 }
 
-.OFF {
+.OFF{
   background-color: black;
   color:white;
+}
+
+.radio{
+  display:none;
+  margin:10px;
+}
+
+.radio #radio1{
+  display: inline-block;
 }
