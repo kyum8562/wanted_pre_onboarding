@@ -21,6 +21,10 @@ function Toggle(){
         console.log(e.target.value)
         
     }
+    
+    const onChange = (e) => {
+        console.log(e.target.value);
+    }
     return(
         <div>
             <button 
