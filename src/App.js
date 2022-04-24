@@ -1,8 +1,11 @@
 import './App.css';
-import Toggle from './components/Toggle'
+import Toggle from './components/Toggle';
+import React from 'react';
+
 function App() {
+
   return (
-    <div className="App">
+    <div>
       <Toggle />
     </div>
   );

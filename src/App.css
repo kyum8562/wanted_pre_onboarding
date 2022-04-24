@@ -1,18 +1,15 @@
-.App {
-  text-align: center;
-}
+/* CSS 기본 설정 */
+* {
+  box-sizing: border-box;
+  margin: 0px;
+  padding: 0px;
+  }
 
-.OFF{
-  background-color: black;
-  color:white;
-}
+  html, body{
+  min-height: 100vh;
+  height: 100%;
+  }
 
-.radio{
-  display:none;
-  margin:10px;
-}
-
-.radio #radio1{
-  display: inline-block;
-  background-color: white
-}
+  #root{
+  height: 100%;
+  }
