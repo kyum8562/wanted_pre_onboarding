@@ -1,5 +1,5 @@
 import React, {useState} from 'react';
-import '../css/toggle.css';
+import '../css/Toggle.css';
 function Toggle(){
 
     const [theme, setTheme] = useState(false);

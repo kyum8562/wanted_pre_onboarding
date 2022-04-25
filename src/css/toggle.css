@@ -82,8 +82,8 @@
 
 /* checked상태에서 slider */
   input:checked + .slider:before{
-    -webkit-transform: translateX(26px);
-    -ms-transform: translateX(26px);
+    -webkit-transform: translateX(247.5px);
+    -ms-transform: translateX(247.5px);
     transform: translateX(247.5px);
     content: "상세";
   }
