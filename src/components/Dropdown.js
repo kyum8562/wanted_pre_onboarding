@@ -1,14 +1,23 @@
 import React, {useState} from 'react';
-import '../css/Dropdown.module.css';
+import '../css/Dropdown.css';
 
 function Dropdown(){
-
+    const dropdown = document.querySelector('.dropdown');
+    const toggleBtn = document.querySelector('.dropdown-toggle');
+    const list = document.querySelector('.dropdown-list');
+    const options = document.querySelectorAll('.dropdown-option');
+    const [selected, setSelected] = useState(0);
+    const onClickSelected = (e) => {
+        list.classList.toggle('show');
+    }
 
     return(
         <div>
             <form action=''>
                 <div className='dropdown'>
-                    <button type='button' className='dropdown-toggle'>▽</button>
+                    <button type='button'
+                            className='dropdown-toggle'
+                            onClick={onClickSelected}>All Symbols ▽</button>
                 
                     <ul className='dropdown-list'>
                         <li className='dropdown-item'> 

@@ -1,5 +1,5 @@
 import React, {useState} from 'react';
-import '../css/Tab.module.css';
+import '../css/Tab.css';
 
 function Tab(){
 
