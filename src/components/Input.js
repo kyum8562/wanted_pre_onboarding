@@ -10,8 +10,12 @@ function Input(){
     const onChangeEmail = (e) => {
         const emailCurrent = e.target.value;
         setEmail(emailCurrent);
-        if(!emailRegex.test(emailCurrent)) setIsEmail(false);
-        else setIsEmail(true);
+        if(!emailRegex.test(emailCurrent)){
+            setIsEmail(false);
+        } 
+        else{
+            setIsEmail(true);
+        }
     }
 
     // 패스워드
@@ -25,23 +29,31 @@ function Input(){
         <div className='container'>
             <div className='input-box'>
                 <div className='email-box'>
-                    {/* <caption>Email</caption> */}
+                    <p>E-mail</p>
                     <input type='email'
                         placeholder='E-mail'
                         className='email'
                         onChange={onChangeEmail}/>
+                    <div className='validation-box'>
+                        {!isEmail ? <h4>Invaild e-mail address.</h4> : <h4>　</h4>}
+                    </div>
+                    <div className='img-box1'>
+                        {!isEmail ?
+                         <img id='i0' src={require('../img/uncheck.png')} /> : 
+                         <img id='i1' src={require('../img/check.png')}/>}   
+                    </div>
                 </div>
                 <div className='password-box'>
-                    {/* <caption>Password</caption> */}
+                    <p>Password</p>
                     <input type={pwd.type}
-                        placeholder='Password'
-                        className='password'>
+                           placeholder='Password'
+                           className='password'>
                     </input>
-                    <div className='img-box'
-                        onClick={onClickBtn}>
-                        {/* {pwd.visible ?
-                        <img id='i1' src={require('../img/show.png')} /> : 
-                        <img id='i2' src={require('../img/hidden.png')}/>}                        */}
+                    <div className='img-box2'
+                         onClick={onClickBtn}>
+                         {pwd.visible ?
+                         <img id='i2' src={require('../img/show.png')} /> : 
+                         <img id='i3' src={require('../img/hidden.png')}/>}                       
                     </div>
                 </div>
             </div>
