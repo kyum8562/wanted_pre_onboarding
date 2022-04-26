@@ -1,5 +1,5 @@
 import React, {useState} from 'react';
-import '../css/Input.css';
+import '../css/Input.module.css';
 
 function Input(){
     // 이메일
