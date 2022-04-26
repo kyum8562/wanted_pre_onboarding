@@ -17,3 +17,14 @@ caption{
     color:rgb(27, 25, 25);
     font-size: 13px;
   }
+
+.password-box #i1, #i2{
+    height:auto;
+    width:20px;
+    object-fit:contain;
+}
+
+.password-box .password{
+    background-image : url('../img/show.png'); 
+}
+
