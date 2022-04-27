@@ -1,70 +1,29 @@
-# Getting Started with Create React App
+# wanted_pre_onboarding
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-## Available Scripts
+## Toggle
 
-In the project directory, you can run:
+토글 버튼 구현
 
-### `npm start`
+- default값 : 기본
+- 토글버튼 클릭시 : 상세
+- CSS를 넣어서 깔끔한 디자인을 구현하려고 노력했습니다!
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+## Tab
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+탭 버튼 구현
 
-### `npm test`
+- default값 : 감자
+- 감자, 고구마, 카레라이스 탭을 누르게 되면 현재 탭에 위치해 있다는 표시를 주기 위해 CSS를 활용했습니다!
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## Input
 
-### `npm run build`
+인풋 버튼 구현
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+- default값 : 아무 입력이 되지 않은 상태
+- Email의 경우 validation check를 하여 이메일 형식이 아닐경우, 인풋박스 오른쪽에 위치한 검정색 체크표시가 유지됩니다.
+  또한 Email의 인풋박스 하단에 'Invaild e-mail address.'가 빨간색으로 경고표시를 줍니다
+- 하지만 이메일 형식에 일치한다면 인풋박스의 색이 초록색으로 변하게 됩니다.
+- Password의 경우 입력시 기본값으로 보이지 않지만, 오른쪽의 눈버튼을 누르게 되면 Text형식으로 바뀌게 되어 비밀번호가
+  보이게 됩니다.
